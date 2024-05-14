@@ -7,6 +7,7 @@ import { TOTS_CORE_PROVIDER, TotsCoreModule } from '@tots/core';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TOTS_AUTH_PROVIDER, TotsAuthConfig, TotsAuthInterceptor, TotsAuthModule } from '@tots/auth';
 import { TOTS_CLOUD_STORAGE_PROVIDER } from '@tots/cloud-storage';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TOTS_CLOUD_STORAGE_PROVIDER } from '@tots/cloud-storage';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
 
     /** Tots Libraries */
     TotsCoreModule,
